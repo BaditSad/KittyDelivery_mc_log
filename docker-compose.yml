@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   mc_log:
+    container_name: mc_log_0
     build: .
     ports:
-      - "3009:3009"
+      - "3090:3009"
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
