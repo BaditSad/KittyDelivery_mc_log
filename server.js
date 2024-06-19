@@ -1,17 +1,28 @@
-require('dotenv').config(); // Charger les variables d'environnement à partir de .env
+require('dotenv').config();
 
 const logRouter = require("./controllers/LogController");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const fs = require("fs");
+const path = require("path");
 
 const app = express();
-const port = process.env.PORT || 3009;
-const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/kittydelivery";
+const port = process.env.PORT;
+const mongoURI = process.env.MONGO_URI;
+
+const swaggerDocumentd = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "swagger.json"))
+);
 
 app.use(cors());
 app.use(bodyParser.json());
+
+app.use("/swagger.json", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.send(swaggerDocumentd);
+});
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
