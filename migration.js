@@ -23,7 +23,7 @@ db.once("open", async function () {
     let logs = [
       {
         log_date: randomDate(new Date(2022, 0, 1), new Date()),
-        log_type: "connexion",
+        log_type: "connection",
         log_message: "User connected to the system",
       },
       {
@@ -33,7 +33,67 @@ db.once("open", async function () {
       },
       {
         log_date: randomDate(new Date(2022, 0, 1), new Date()),
-        log_type: "connexion",
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
+        log_message: "User connected to the system",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "download",
+        log_message: "User downloaded a report",
+      },
+      {
+        log_date: randomDate(new Date(2022, 0, 1), new Date()),
+        log_type: "connection",
         log_message: "User connected to the system",
       },
       {
